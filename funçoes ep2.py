@@ -1,4 +1,4 @@
-# Transforma base de questoes
+# 1. Transforma base de questoes
 def transforma_base(base_de_questoes):
     dicionario = {}
     for lista in base_de_questoes:
@@ -16,7 +16,7 @@ def transforma_base(base_de_questoes):
     # }
 
 
-# Valida uma questao
+# 2. Valida uma questao
 def valida_questao(questao):
     dicionario = {}
     tem_titulo = False
@@ -100,7 +100,7 @@ def valida_questao(questao):
         # }
 
 
-# Valida Lista de Questões
+# 3. Valida Lista de Questões
 def valida_questao(questao):
     dicionario = {}
     tem_titulo = False
@@ -194,7 +194,7 @@ def valida_questoes(lista_de_questoes):
     return lista
 
 
-# Sorteia Uma Questão
+# 4. Sorteia Uma Questão
 import random
 def sorteia_questao(dic2, nivel2):
     sorteio = random.randint(0, len(dic2[nivel2])-1)
@@ -202,4 +202,23 @@ def sorteia_questao(dic2, nivel2):
     #eu começo na posição 0, pegando o len do dicionário, se tiver 20 questões, a última está na posição 19. Se eu coloco de zero a vinte e
     #ele sorteia a questão vinte, vai dar erro pq a minha última questão está na posiçaõ 19.
 
-#Sorteia uma Questão Inédita
+# 5. Sorteia uma Questão Inédita
+
+
+
+
+# 6. Questao para testo 
+def questao_para_texto(dic_questao, numero_questao):
+    texto = '----------------------------------------\n'
+    texto += 'QUESTAO ' + str(numero_questao) + '\n' + '\n'
+    texto += dic_questao['titulo'] + '\n' + '\n'
+    texto += 'RESPOSTAS:\n'
+    texto += 'A: ' + dic_questao['opcoes']['A'] + '\n'
+    texto += 'B: ' + dic_questao['opcoes']['B'] + '\n'
+    texto += 'C: ' + dic_questao['opcoes']['C'] + '\n'
+    texto += 'D: ' + dic_questao['opcoes']['D'] + '\n'
+    return texto
+
+
+# 7. Gera Ajuda em uma Questão!
+
