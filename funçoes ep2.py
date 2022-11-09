@@ -222,3 +222,36 @@ def questao_para_texto(dic_questao, numero_questao):
 
 # 7. Gera Ajuda em uma Questão!
 
+def gera_ajuda(dic2_questao):
+    if 'A' == dic2_questao['correta']:
+        quest_correta = 0
+    elif 'B' == dic2_questao['correta']:
+        quest_correta = 1
+    elif 'C' == dic2_questao['correta']:
+        quest_correta = 2
+    elif 'D' == dic2_questao['correta']:
+        quest_correta = 3
+    quantas_sortear = random.randint(1, 2)
+    l = ['A', 'B', 'C', 'D']
+
+    i = 0
+    x = True
+    achou_primeira = False
+    sorteada = -1  #-1 pq é um número diferente dos q ele pode sortear
+    while i < quantas_sortear:
+        quest_sorteada = random.randint(0, len(dic2_questao['opcoes'])-1)
+        if quest_sorteada == quest_correta or quest_sorteada == sorteada:
+            x = True
+        elif achou_primeira == False:
+            sorteada = quest_sorteada
+            achou_primeira = True
+            x = False
+            texto2 = 'DICA:\n'
+            texto2 += 'Opções certamente erradas: '
+            texto2 += dic2_questao['opcoes'][l[quest_sorteada]]
+            i += 1
+        else:
+            texto2 += ' | ' + dic2_questao['opcoes'][l[quest_sorteada]] 
+            i += 1
+    #texto2 += "'"
+    return texto2
