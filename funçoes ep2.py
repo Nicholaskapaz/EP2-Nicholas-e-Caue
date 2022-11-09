@@ -195,3 +195,11 @@ def valida_questoes(lista_de_questoes):
 
 
 # Sorteia Uma Questão
+import random
+def sorteia_questao(dic2, nivel2):
+    sorteio = random.randint(0, len(dic2[nivel2])-1)
+    return dic2[nivel2][sorteio]
+    #eu começo na posição 0, pegando o len do dicionário, se tiver 20 questões, a última está na posição 19. Se eu coloco de zero a vinte e
+    #ele sorteia a questão vinte, vai dar erro pq a minha última questão está na posiçaõ 19.
+
+#Sorteia uma Questão Inédita
