@@ -208,5 +208,54 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'opcoes': {'A': 'Hidrica', 'B': 'termica', 'C': 'eolica', 'D': 'quimica'},
           'correta': 'C'}
 
+          {'titulo': 'Em qual país fica Machu Picchu?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Chile', 'B': 'Venezuela', 'C': 'Peru', 'D': 'Argentina'},
+          'correta': 'C'}
         
+          {'titulo': 'Qual é o segundo esporte mais praticado no Brasil?',
+          'nivel': 'dificil',
+          'opcoes': {'A': 'Futebol', 'B': 'Vôlei', 'C': 'Natação', 'D': 'Judô'},
+          'correta': 'B'}
+
+          {'titulo': 'Qual é o nome do maior osso do corpo humano?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Fêmur', 'B': 'Petela', 'C': 'Tibia', 'D': 'Fibula'},
+          'correta': 'A'}
+
+          {'titulo': 'Qual o nome do maior oceano do mundo?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Oceano Atlântico', 'B': 'Oceano Indico', 'C': 'Oceano Ártico', 'D': 'Oceano Pacífico'},
+          'correta': 'D'}        
+
+          {'titulo': 'Qual é o animal que mata mais humanos por ano?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Onça pintada', 'B': 'Tubarão', 'C': 'Mosquito', 'D': 'Morcego'},
+          'correta': 'C'}                  
+
+          {'titulo': 'Qual o maior Planeta do Sistema Solar? ',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Vênus', 'B': 'Urano', 'C': 'Júpiter', 'D': 'Netuno'},
+          'correta': 'C'}         
+
+          {'titulo': 'Qual é o nome da religião que considera o alcorão como seu livro sagrado?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Espírita', 'B': 'Islamismo ', 'C': 'Católica', 'D': 'Evangélica'},
+          'correta': 'B'}  
+
+          {'titulo': 'Qual o nome do segundo maior rio do mundo?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Rio de Janeiro', 'B': 'Rio amazonas', 'C': 'Rio Nilo', 'D': 'Rio Yangtze'},
+          'correta': 'B'}           
+
+          {'titulo': 'Em qual colocação Brasil ficou na copa de 2018?',
+          'nivel': 'dificil',
+          'opcoes': {'A': '5', 'B': '6', 'C': '7', 'D': '8'},
+          'correta': 'B'}       
+
+          {'titulo': 'Qual o nome do professor de Dessoft?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Luva de pedreiro', 'B': 'Neymar', 'C': 'Rodinei', 'D': 'Maciel'},
+          'correta': 'D'}        
+
         ]
