@@ -157,4 +157,56 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'nivel': 'dificil',
           'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
           'correta': 'D'}
+
+          {'titulo': 'Qual time ganhou a copa do mundo em 2018?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Brasil', 'B': 'França', 'C': 'Alemanha', 'D': 'Espanha'},
+          'correta': 'B'}
+
+          {'titulo': 'Em qual ano a expedição de Pedro Álvares Cabral chegou no Brasil?',
+          'nivel': 'facil',
+          'opcoes': {'A': '1500', 'B': '1600', 'C': '1450', 'D': '1550'},
+          'correta': 'A'}
+
+          {'titulo': 'Qual o resultado da operação 67 + 33?',
+          'nivel': 'facil',
+          'opcoes': {'A': '95', 'B': '90', 'C': '100', 'D': '102'},
+          'correta': 'C'}
+
+          {'titulo': 'Qual editora vende o album da copa no Brasil',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Panini', 'B': 'Editorial Record', 'C': 'Companhia das Letras', 'D': 'JBC'},
+          'correta': 'A'}
+
+          {'titulo': 'Qual Qual dessas estrelas é a maior?',
+          'nivel': 'dificil',
+          'opcoes': {'A': 'Aldebarã', 'B': 'VY Canis Majoris', 'C': 'Vega', 'D': 'sagittarius A'},
+          'correta': 'B'}
+
+          {'titulo': 'Qual significado da palavra onírico?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'entusiasta de astrologia', 'B': 'substancia delirante', 'C': 'referente aos sonhos', 'D': 'compositor'},
+          'correta': 'C'}
+
+          {'titulo': 'Qual algarismo romano representa o numero 19?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'IC', 'B': 'IX', 'C': 'XXI', 'D': 'XIX'},
+          'correta': 'D'}
+
+          {'titulo': 'Qual destes filmes recebeu mais indicaçoes ao Oscar?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Avatar', 'B': 'Titanic', 'C': 'Star Wars', 'D': 'Velozes e Furiosos'},
+          'correta': 'B'}
+
+          {'titulo': 'Quantos segundos há em duas horas?',
+          'nivel': 'dificil',
+          'opcoes': {'A': '2800', 'B': '3600', 'C': '6900', 'D': '7200'},
+          'correta': 'D'}
+
+          {'titulo': 'Qual o nome da energia gerada pelo vento?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Hidrica', 'B': 'termica', 'C': 'eolica', 'D': 'quimica'},
+          'correta': 'C'}
+
+        
         ]
