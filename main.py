@@ -3,11 +3,11 @@ import funçoes_ep2
 
 lista = []
 
-print('Olá! Você está na Fortuna DesSoft e terá a oportunidade de enriquecer!\n\n')
-nome = input('Qual seu nome? ')
+print('\33[35mOlá! Você está na Fortuna DesSoft e terá a oportunidade de enriquecer!\n\n')
+nome = input('\33[mQual seu nome? ')
 print('Ok ' + nome + ' você tem direito a pular 3 vezes e 2 ajudas!\n')
-print('As opções de resposta são "A", "B", "C", "D", "ajuda", "pula" e "parar"!')
-input('Aperte ENTER para continuar... ')
+print('\33[36mAs opções de resposta são "A", "B", "C", "D", "ajuda", "pula" e "parar"!')
+input('\33[mAperte ENTER para continuar... ')
 
 
 lista = funçoes_ep2.valida_questoes(lib_questoes.quest)
@@ -45,3 +45,55 @@ while i < 9:
         questoes2 = funçoes_ep2.questao_para_texto(questoes, i+1)
         pediu_ajuda = False
     print(questoes2)
+
+    resposta = input('Qual sua resposta?! ').upper()
+    if resposta not in lista2:
+        print('Opção inválida!\n')
+        print('As opções de resposta são "A", "B", "C", "D", "ajuda", "pula" e "parar"!')
+        acertou = False
+    else:
+        if resposta == 'AJUDA':
+            if qtd_ajuda == 0:
+                print('Não deu! Você não tem mais direito a ajuda!')
+                input('Aperte ENTER para continuar... ')
+                acertou = False
+            elif qtd_ajuda == 2:
+                pediu_ajuda = True
+                qtd_ajuda -= 1
+                print('Ok, lá vem ajuda! Você ainda tem 1 ajuda!\n\n')
+                input('Aperte ENTER para continuar... ')
+                ajuda = funçoes_ep2.gera_ajuda(questoes)
+                print(ajuda)
+                acertou = False
+            elif qtd_ajuda == 1:
+                if pediu_ajuda == True:
+                    print('Não deu! Você já pediu ajuda nesta questão!\n')
+                    input('Aperte ENTER para continuar... ')
+                    acertou = False
+                else:
+                    qtd_ajuda -= 1
+                    print('Ok, lá vem ajuda! ATENÇÃO: Você não tem mais direito a ajudas!\n')
+                    input('Aperte ENTER para continuar... ')
+                    ajuda = funçoes_ep2.gera_ajuda(questoes)
+                    print(ajuda)
+                    acertou = False
+        elif resposta == 'PULA':
+            if qtd_pulo == 0:
+                print('Não deu! Você não tem mais direito a pulos!\n')
+                input('Aperte ENTER para continuar... ')
+                acertou = False
+            elif qtd_pulo == 3:
+                qtd_pulo -= 1
+                print('Ok, pulando! Você ainda tem 2 pulos!\n')
+                input('Aperte ENTER para continuar... ')
+                acertou = True
+            elif qtd_pulo == 2:
+                qtd_pulo -= 1
+                print('Ok, pulando! Você ainda tem 1 pulo!\n')
+                input('Aperte ENTER para continuar... ')
+                acertou = True
+            else:
+                qtd_pulo -= 1
+                print('Ok, pulando! ATENÇÃO: Você não tem mais direito a pulos!\n')
+                input('Aperte ENTER para continuar... ')
+                acertou = True
