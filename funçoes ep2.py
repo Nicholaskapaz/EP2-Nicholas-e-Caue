@@ -1,3 +1,5 @@
+import random
+
 # 1. Transforma base de questoes
 def transforma_base(base_de_questoes):
     dicionario = {}
@@ -195,7 +197,6 @@ def valida_questoes(lista_de_questoes):
 
 
 # 4. Sorteia Uma Questão
-import random
 def sorteia_questao(dic2, nivel2):
     sorteio = random.randint(0, len(dic2[nivel2])-1)
     return dic2[nivel2][sorteio]
@@ -203,7 +204,16 @@ def sorteia_questao(dic2, nivel2):
     #ele sorteia a questão vinte, vai dar erro pq a minha última questão está na posiçaõ 19.
 
 # 5. Sorteia uma Questão Inédita
+def sorteia_questao(dic2, nivel2):
+    sorteio = random.randint(0, len(dic2[nivel2])-1)
+    return dic2[nivel2][sorteio]
 
+def sorteia_questao_inedita(dic3, nivel3, questoes_ja_sorteadas):
+    questao2 = sorteia_questao(dic3, nivel3)     
+    while questao2 in questoes_ja_sorteadas:
+        questao2 = sorteia_questao(dic3, nivel3)
+    questoes_ja_sorteadas.append(questao2)
+    return questao2
 
 
 

@@ -156,106 +156,105 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
          {'titulo': 'O que é Necrose?',
           'nivel': 'dificil',
           'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
-          'correta': 'D'}
+          'correta': 'D'},
 
-          {'titulo': 'Qual time ganhou a copa do mundo em 2018?',
+         {'titulo': 'Qual time ganhou a copa do mundo em 2018?',
           'nivel': 'facil',
           'opcoes': {'A': 'Brasil', 'B': 'França', 'C': 'Alemanha', 'D': 'Espanha'},
-          'correta': 'B'}
+          'correta': 'B'},
 
-          {'titulo': 'Em qual ano a expedição de Pedro Álvares Cabral chegou no Brasil?',
+         {'titulo': 'Em qual ano a expedição de Pedro Álvares Cabral chegou no Brasil?',
           'nivel': 'facil',
           'opcoes': {'A': '1500', 'B': '1600', 'C': '1450', 'D': '1550'},
-          'correta': 'A'}
+          'correta': 'A'},
 
-          {'titulo': 'Qual o resultado da operação 67 + 33?',
+         {'titulo': 'Qual o resultado da operação 67 + 33?',
           'nivel': 'facil',
           'opcoes': {'A': '95', 'B': '90', 'C': '100', 'D': '102'},
-          'correta': 'C'}
+          'correta': 'C'},
 
-          {'titulo': 'Qual editora vende o album da copa no Brasil',
+         {'titulo': 'Qual editora vende o album da copa no Brasil',
           'nivel': 'facil',
           'opcoes': {'A': 'Panini', 'B': 'Editorial Record', 'C': 'Companhia das Letras', 'D': 'JBC'},
-          'correta': 'A'}
+          'correta': 'A'},
 
-          {'titulo': 'Qual Qual dessas estrelas é a maior?',
+         {'titulo': 'Qual Qual dessas estrelas é a maior?',
           'nivel': 'dificil',
           'opcoes': {'A': 'Aldebarã', 'B': 'VY Canis Majoris', 'C': 'Vega', 'D': 'sagittarius A'},
-          'correta': 'B'}
+          'correta': 'B'},
 
-          {'titulo': 'Qual significado da palavra onírico?',
+         {'titulo': 'Qual significado da palavra onírico?',
           'nivel': 'medio',
           'opcoes': {'A': 'entusiasta de astrologia', 'B': 'substancia delirante', 'C': 'referente aos sonhos', 'D': 'compositor'},
-          'correta': 'C'}
+          'correta': 'C'},
 
-          {'titulo': 'Qual algarismo romano representa o numero 19?',
+         {'titulo': 'Qual algarismo romano representa o numero 19?',
           'nivel': 'medio',
           'opcoes': {'A': 'IC', 'B': 'IX', 'C': 'XXI', 'D': 'XIX'},
-          'correta': 'D'}
+          'correta': 'D'},
 
-          {'titulo': 'Qual destes filmes recebeu mais indicaçoes ao Oscar?',
+         {'titulo': 'Qual destes filmes recebeu mais indicaçoes ao Oscar?',
           'nivel': 'medio',
           'opcoes': {'A': 'Avatar', 'B': 'Titanic', 'C': 'Star Wars', 'D': 'Velozes e Furiosos'},
-          'correta': 'B'}
+          'correta': 'B'},
 
-          {'titulo': 'Quantos segundos há em duas horas?',
+         {'titulo': 'Quantos segundos há em duas horas?',
           'nivel': 'dificil',
           'opcoes': {'A': '2800', 'B': '3600', 'C': '6900', 'D': '7200'},
-          'correta': 'D'}
+          'correta': 'D'},
 
-          {'titulo': 'Qual o nome da energia gerada pelo vento?',
+         {'titulo': 'Qual o nome da energia gerada pelo vento?',
           'nivel': 'medio',
           'opcoes': {'A': 'Hidrica', 'B': 'termica', 'C': 'eolica', 'D': 'quimica'},
-          'correta': 'C'}
+          'correta': 'C'},
 
-          {'titulo': 'Em qual país fica Machu Picchu?',
+         {'titulo': 'Em qual país fica Machu Picchu?',
           'nivel': 'facil',
           'opcoes': {'A': 'Chile', 'B': 'Venezuela', 'C': 'Peru', 'D': 'Argentina'},
-          'correta': 'C'}
+          'correta': 'C'},
         
-          {'titulo': 'Qual é o segundo esporte mais praticado no Brasil?',
+         {'titulo': 'Qual é o segundo esporte mais praticado no Brasil?',
           'nivel': 'dificil',
           'opcoes': {'A': 'Futebol', 'B': 'Vôlei', 'C': 'Natação', 'D': 'Judô'},
-          'correta': 'B'}
+          'correta': 'B'},
 
-          {'titulo': 'Qual é o nome do maior osso do corpo humano?',
+         {'titulo': 'Qual é o nome do maior osso do corpo humano?',
           'nivel': 'medio',
           'opcoes': {'A': 'Fêmur', 'B': 'Petela', 'C': 'Tibia', 'D': 'Fibula'},
-          'correta': 'A'}
+          'correta': 'A'},
 
-          {'titulo': 'Qual o nome do maior oceano do mundo?',
+         {'titulo': 'Qual o nome do maior oceano do mundo?',
           'nivel': 'medio',
           'opcoes': {'A': 'Oceano Atlântico', 'B': 'Oceano Indico', 'C': 'Oceano Ártico', 'D': 'Oceano Pacífico'},
-          'correta': 'D'}        
+          'correta': 'D'},     
 
-          {'titulo': 'Qual é o animal que mata mais humanos por ano?',
+         {'titulo': 'Qual é o animal que mata mais humanos por ano?',
           'nivel': 'facil',
           'opcoes': {'A': 'Onça pintada', 'B': 'Tubarão', 'C': 'Mosquito', 'D': 'Morcego'},
-          'correta': 'C'}                  
+          'correta': 'C'},              
 
-          {'titulo': 'Qual o maior Planeta do Sistema Solar? ',
+         {'titulo': 'Qual o maior Planeta do Sistema Solar? ',
           'nivel': 'medio',
           'opcoes': {'A': 'Vênus', 'B': 'Urano', 'C': 'Júpiter', 'D': 'Netuno'},
-          'correta': 'C'}         
+          'correta': 'C'},         
 
-          {'titulo': 'Qual é o nome da religião que considera o alcorão como seu livro sagrado?',
+         {'titulo': 'Qual é o nome da religião que considera o alcorão como seu livro sagrado?',
           'nivel': 'facil',
           'opcoes': {'A': 'Espírita', 'B': 'Islamismo ', 'C': 'Católica', 'D': 'Evangélica'},
-          'correta': 'B'}  
+          'correta': 'B'}, 
 
-          {'titulo': 'Qual o nome do segundo maior rio do mundo?',
+         {'titulo': 'Qual o nome do segundo maior rio do mundo?',
           'nivel': 'medio',
           'opcoes': {'A': 'Rio de Janeiro', 'B': 'Rio amazonas', 'C': 'Rio Nilo', 'D': 'Rio Yangtze'},
-          'correta': 'B'}           
+          'correta': 'B'},          
 
-          {'titulo': 'Em qual colocação Brasil ficou na copa de 2018?',
+         {'titulo': 'Em qual colocação Brasil ficou na copa de 2018?',
           'nivel': 'dificil',
           'opcoes': {'A': '5', 'B': '6', 'C': '7', 'D': '8'},
-          'correta': 'B'}       
+          'correta': 'B'},       
 
-          {'titulo': 'Qual o nome do professor de Dessoft?',
+         {'titulo': 'Qual o nome do professor de Dessoft?',
           'nivel': 'facil',
           'opcoes': {'A': 'Luva de pedreiro', 'B': 'Neymar', 'C': 'Rodinei', 'D': 'Maciel'},
-          'correta': 'D'}        
-
+          'correta': 'D'}
         ]
