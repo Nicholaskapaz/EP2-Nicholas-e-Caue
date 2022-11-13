@@ -132,8 +132,11 @@ def sorteia_questao_inedita(dic3, nivel3, questoes_ja_sorteadas):
 # 6. Questao para testo 
 def questao_para_texto(dic_questao, numero_questao):
     texto = '----------------------------------------\n'
-    texto += 'QUESTAO ' + str(numero_questao) + '\n' + '\n'
-    texto += dic_questao['titulo'] + '\n' + '\n'
+    texto += '\33[34mQUESTAO ' + str(numero_questao) + '\n'
+    texto += ' \n'
+    texto += '\33[m'
+    texto +=  dic_questao['titulo'] + '\n'
+    texto += ' \n'
     texto += 'RESPOSTAS:\n'
     texto += 'A: ' + dic_questao['opcoes']['A'] + '\n'
     texto += 'B: ' + dic_questao['opcoes']['B'] + '\n'
