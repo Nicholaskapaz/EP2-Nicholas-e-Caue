@@ -171,9 +171,10 @@ def gera_ajuda(dic2_questao):
             sorteada = quest_sorteada
             achou_primeira = True
             x = False
-            texto2 = 'DICA:\n'
+            texto2 = '\33[32mDICA:\n'
             texto2 += 'Opções certamente erradas: '
             texto2 += dic2_questao['opcoes'][l[quest_sorteada]]
+            texto2 += '\33[m'
             i += 1
         else:
             texto2 += ' | ' + dic2_questao['opcoes'][l[quest_sorteada]] 

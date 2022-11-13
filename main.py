@@ -48,14 +48,15 @@ while i < 9:
 
     resposta = input('Qual sua resposta?! ').upper()
     if resposta not in lista2:
-        print('Opção inválida!\n')
-        print('As opções de resposta são "A", "B", "C", "D", "ajuda", "pula" e "parar"!')
+        print('\33[31mOpção inválida!\n')
+        print('\33[36mAs opções de resposta são "A", "B", "C", "D", "ajuda", "pula" e "parar"!')
+        '\33[m'
         acertou = False
     else:
         if resposta == 'AJUDA':
             if qtd_ajuda == 0:
-                print('Não deu! Você não tem mais direito a ajuda!')
-                input('Aperte ENTER para continuar... ')
+                print('\33[31mNão deu! Você não tem mais direito a ajuda!')
+                input('\33[mAperte ENTER para continuar... ')
                 acertou = False
             elif qtd_ajuda == 2:
                 pediu_ajuda = True
@@ -64,11 +65,12 @@ while i < 9:
                 input('Aperte ENTER para continuar... ')
                 ajuda = funçoes_ep2.gera_ajuda(questoes)
                 print(ajuda)
+                '\33[m'
                 acertou = False
             elif qtd_ajuda == 1:
                 if pediu_ajuda == True:
-                    print('Não deu! Você já pediu ajuda nesta questão!\n')
-                    input('Aperte ENTER para continuar... ')
+                    print('\33[31mNão deu! Você já pediu ajuda nesta questão!\n')
+                    input('\33[mAperte ENTER para continuar... ')
                     acertou = False
                 else:
                     qtd_ajuda -= 1
@@ -79,8 +81,8 @@ while i < 9:
                     acertou = False
         elif resposta == 'PULA':
             if qtd_pulo == 0:
-                print('Não deu! Você não tem mais direito a pulos!\n')
-                input('Aperte ENTER para continuar... ')
+                print('\33[31mNão deu! Você não tem mais direito a pulos!\n')
+                input('\33[mAperte ENTER para continuar... ')
                 acertou = False
             elif qtd_pulo == 3:
                 qtd_pulo -= 1
@@ -100,9 +102,10 @@ while i < 9:
         elif resposta == 'PARAR':
             parar_loop = True
             while parar_loop == True:
-                parando = input('Deseja mesmo parar [S/N]?? Caso responda "S", sairá com R$ {}'.format(val_premio)).upper()
+                parando = input('\33[mDeseja mesmo parar [S/N]?? Caso responda "S", sairá com R$ {}'.format(val_premio)).upper()
                 if parando not in quer_parar:
-                    print('Opção inválida!\n\n')
+                    print('\33[31mOpção inválida!\n\n')
+                    '\33[m'
                 elif parando == 'S':
                     print('Ok! Você parou e seu prêmio é de R$ {}'.format(val_premio))
 
@@ -120,8 +123,8 @@ while i < 9:
                     parar_loop = False
                     acertou = False        
         elif resposta != questoes['correta']:
-            print('Que pena! Você errou e vai sair sem nada :(')
-            mensagem = input('Deseja recomeçar o jogo [S/N]?? Caso responda "S", você voltará para a primeira pergunta ').upper()
+            print('\33[33mQue pena! Você errou e vai sair sem nada :(')
+            mensagem = input('\33[mDeseja recomeçar o jogo [S/N]?? Caso responda "S", você voltará para a primeira pergunta ').upper()
             if mensagem == 'S':
                 acertou = True
                 i = 0
@@ -132,11 +135,11 @@ while i < 9:
                 exit()
         elif resposta == questoes['correta']:
             if i == 8:
-                print('PARABÉNS, você zerou o jogo e ganhou um milhão de reais!')
+                print('\33[32mPARABÉNS, você zerou o jogo e ganhou um milhão de reais!')
                 exit()
             else:
                 val_premio = premio[i]
-                print('Você acertou! Seu prêmio atual é de R$ {}'.format(premio[i]))
-                input('Aperte ENTER para continuar... ')
+                print('\33[32mVocê acertou! Seu prêmio atual é de R$ {}'.format(premio[i]))
+                input('\33[mAperte ENTER para continuar... ')
             i += 1
             acertou = True
