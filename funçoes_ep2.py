@@ -261,3 +261,5 @@ def gera_ajuda(dic2_questao):
             i += 1
     #texto2 += "'"
     return texto2
+
+
